@@ -20,7 +20,7 @@ else
   echo "> kill -15 $CURRENT_PID" >> /home/ubuntu/action/deploy.log
   sudo kill -15 $CURRENT_PID
   while pgrep -f $CURRENT_PID > /dev/null; do
-  echo "killing ..."
+  echo "> closing...." >> /home/ubuntu/action/deploy.log
   sleep 1
 done
   sleep 10
