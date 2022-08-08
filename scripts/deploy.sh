@@ -23,7 +23,7 @@ else
   echo "> closing...." >> /home/ubuntu/action/deploy.log
   sleep 1
 done
-  sleep 10
+  sleep 2
 fi
 
 
