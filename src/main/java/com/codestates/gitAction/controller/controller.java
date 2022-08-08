@@ -1,4 +1,4 @@
-package com.codestates.controller;
+package com.codestates.gitAction.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
