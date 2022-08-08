@@ -17,6 +17,7 @@ if [ -z $CURRENT_PID ]
 then
   echo "> 현재 구동중인 애플리케이션이 없으므로 종료하지 않습니다." >> /home/ubuntu/action/deploy.log
 else
+  echo "> 현재 구동중. $CURRENT_PID " >> /home/ubuntu/action/deploy.log
   echo "> kill -15 $CURRENT_PID" >> /home/ubuntu/action/deploy.log
   sudo kill -15 $CURRENT_PID
 
