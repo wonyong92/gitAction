@@ -19,6 +19,10 @@ then
 else
   echo "> kill -15 $CURRENT_PID" >> /home/ubuntu/action/deploy.log
   sudo kill -15 $CURRENT_PID
+  while pgrep -f $CURRENT_PID > /dev/null; do
+  echo "sleep ..."
+  sleep 1
+done
   sleep 10
 fi
 
